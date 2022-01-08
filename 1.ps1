@@ -1,3 +1,4 @@
 Write-Output "Yo"¨
 
-Write-Host "KARAAA"
+
+Write-Output "joko tää toimii?"
