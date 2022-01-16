@@ -1,7 +1,7 @@
 $ytLink = Read-Host -Prompt 'Youtube url'
 
 $Title = "Youtube Downloader"
-$Info = "Do you want to download Audio or Video?"
+$Info = "Choose your download option:"
 
 $options = @(
     [System.Management.Automation.Host.ChoiceDescription]::new("&Audio", "Downloads as MP3")
