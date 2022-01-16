@@ -20,4 +20,4 @@ switch($opt)
 Read-Host -Prompt  "All done. Press enter to exit."
 
 # Opens the download folder
-ii .\
+ii .
