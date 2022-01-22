@@ -1,4 +1,4 @@
-$ytLink = Read-Host -Prompt 'Youtube url'
+$YTurl = Read-Host 'Youtube url'
 
 $Title = "Youtube Downloader"
 $Info = "Choose your download option:"
@@ -10,15 +10,13 @@ $options = @(
 )
 
 [int]$defaultchoice = 1
-
 $opt = $host.UI.PromptForChoice($Title , $Info , $Options, $defaultchoice)
 
-switch($opt)
-{    
-    0 {C:\ProgramData\chocolatey\bin\yt-dlp.exe $ytLink -x --audio-format mp3}
-    1 {C:\ProgramData\chocolatey\bin\yt-dlp.exe $ytLink --recode-video mp4}
-    2 {C:\ProgramData\chocolatey\bin\yt-dlp.exe $ytLink}
-} 
+switch ($opt) {    
+    0 { C:\ProgramData\chocolatey\bin\yt-dlp.exe $YTurl -x --audio-format mp3 }
+    1 { C:\ProgramData\chocolatey\bin\yt-dlp.exe $YTurl --recode-video mp4 }
+    2 { C:\ProgramData\chocolatey\bin\yt-dlp.exe $YTurl }
+}
 
 Read-Host -Prompt  "All done. Press enter to exit."
 
